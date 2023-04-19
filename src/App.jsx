@@ -1,5 +1,5 @@
-import './App.css';
-import Square from './components/Square';
+import './styles.scss';
+import Board from './components/Board';
 
 function App() {
   return (
@@ -7,13 +7,10 @@ function App() {
       <h1>Title</h1>
       <img src="./vite.svg" alt="" />
 
-      <Square value="something">
+      <Board value="something">
         <div> hello there</div>
         <h5> this is title</h5>
-      </Square>
-      <Square value="Andrew" />
-      <Square value="hello" />
-      <Square value="5" />
+      </Board>
     </div>
   );
 }

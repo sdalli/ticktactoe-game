@@ -1,12 +1,9 @@
-const Square = ({ value, children }) => {
+const Square = ({ value }) => {
   console.log(value);
   return (
-    <div>
+    <button type="button" className="square">
       {value}
-      <h5> Children will be rendered below</h5>
-      <div> {children}</div>
-      <div>{false}</div>
-    </div>
+    </button>
   );
 };
 
