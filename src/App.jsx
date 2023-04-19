@@ -1,16 +1,23 @@
+import { useState } from 'react';
 import './styles.scss';
 import Board from './components/Board';
 
 function App() {
-  return (
-    <div className="card">
-      <h1>Title</h1>
-      <img src="./vite.svg" alt="" />
+  const [counter, setCounter] = useState(1);
 
-      <Board value="something">
-        <div> hello there</div>
-        <h5> this is title</h5>
-      </Board>
+  const onBtnClick = () => {
+    console.log('hello');
+    setCounter(currentCounter => {
+      return currentCounter + 1;
+    });
+  };
+
+  return (
+    <div className="app">
+      <div>
+        <button onClick={onBtnClick}> Click Me Please</button>
+        <div>{counter}</div>
+      </div>
     </div>
   );
 }
