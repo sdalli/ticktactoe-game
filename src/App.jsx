@@ -14,10 +14,7 @@ function App() {
 
   return (
     <div className="app">
-      <div>
-        <button onClick={onBtnClick}> Click Me Please</button>
-        <div>{counter}</div>
-      </div>
+      <Board />
     </div>
   );
 }
